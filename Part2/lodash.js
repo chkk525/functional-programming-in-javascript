@@ -36,6 +36,7 @@ console.log(map([2, 3, 1], x => x * 2))
 
 function reduce(arr, fn, acc) {
     acc = !acc ? arr[0] ? acc;
+
     if (arr.length > 0) {
         const [elem, ...rest] = arr
         acc = fn(acc, elem)
